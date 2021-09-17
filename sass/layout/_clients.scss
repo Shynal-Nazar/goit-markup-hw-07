@@ -47,12 +47,14 @@
   fill: #afb1b8;
 }
 
-.clients__link .clients__icon,
-.clients__link .clients__icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.clients__link {
+  .clients__icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+  fill: $accent-color;
+  }
 }
 
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  fill: $accent-color;
-}
